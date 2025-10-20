@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Position practice
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+      p{
+        font-family: Roboto;
+        margin: 0;
+      }
+      .close{
+        position: absolute;
+        background-color: rgb(187, 183, 183);
+        right: 0px;
+        top: 0px;
+        color: white;
+    }
+      .close:hover{
+          background-color: red;
+          cursor: pointer;
+        }
+    </style>
+  </head>
+
+  <body style = "
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 75px;">
+
+    <div style = "
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      z-index: 3">
+      header
+    </div>
+
+    <div style = "
+      background-color: lightgreen;
+      color: black;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px">
+      sidebar
+
+      <div class = "close">
+        X
+      </div>
+    </div>
+
+    <div style = "
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 10px;
+      z-index: 2">
+      absolute 1
+    </div>
+
+    <div style = "
+      background-color: blue;
+      position: absolute;
+      color: white;
+      top: 150px;
+      right: 10px;
+      z-index: 4">
+      absolute 2
+    </div>
+
+    <div style = "
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      margin-left: 0px">
+     div 1
+    </div>
+
+    <div style = "
+      background-color: pink;
+      height: 200px;
+      width: 200px;
+      margin-left: 0px;
+      position: relative">
+      div 2
+
+      <div style = "
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 40px;
+        bottom: 10px;
+        right: 10px">
+        <p>14:20</p>
+      </div>
+
+    </div>
+      
+  </body>
+</html>
+
+
+
+
+
+<!-- instead of bottom in positioning we can use hright to set the position from bottom 
+     to stick the elements to the extreme end of the webpage we can set the margin of boy to 0px "margin: 0px;"-->
+
+
+<!-- body{
+     padding-top: 42px;
+    padding-left: 75px; 
+    margin-left: 0px; }-->
+
+
+<!-- The z-index is used to give priority to an element over another element while viewing it, like while scrolling up aor down the element with higher z-index appears to be on top of other one
+    "z-index: 1", and the default value is "0" -->
+
+
+<!-- when the "position: absolute" is placed inside fixed, then it acts relative to the fixed element
+      absolute is placed inside relative -->
